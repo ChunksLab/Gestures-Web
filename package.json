@@ -1,0 +1,41 @@
+{
+  "name": "chunkslab-gestures-web",
+  "version": "1.0.0",
+  "description": "Web for ChunksLab-Gestures skins url api.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChunksLab/ChunksLab-Gestures-Web.git"
+  },
+  "author": "ChunksLab, amownyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChunksLab/ChunksLab-Gestures-Web/issues"
+  },
+  "homepage": "https://github.com/ChunksLab/ChunksLab-Gestures-Web#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/module-alias": "^2.0.4",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.14.10",
+    "express": "^4.19.2",
+    "module-alias": "^2.2.3",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express-async-handler": "^1.2.0",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.5.0",
+    "morgan": "^1.10.0",
+    "runtypes": "^6.7.0"
+  }
+}
