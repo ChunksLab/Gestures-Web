@@ -1,6 +1,7 @@
 # Git
 *.orig
 !.gitignore
+.env
 
 # Windows
 Thumbs.db
