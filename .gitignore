@@ -1,6 +1,7 @@
 # Git
 *.orig
 !.gitignore
+node_modules/
 .env
 
 # Windows
