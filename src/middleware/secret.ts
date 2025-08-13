@@ -14,7 +14,7 @@ export default async function (req: Request, res: Response, next: NextFunction) 
     : req.ip || (req.connection.remoteAddress ?? "");
 
   const resp = await fetch(`${BASE_URL}/${encodeURIComponent(key)}/validate`, {
-    method: "POST",
+    method: "GET",
     headers: {
       "X-Forwarded-For": clientIp,
       "User-Agent": req.get("user-agent") || "",
