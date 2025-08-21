@@ -27,6 +27,10 @@ const savePlayer = asyncHandler(
 const getPlayerById = asyncHandler(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
+      if (!req.params.uniqueId) {
+        res.status(400).json({ message: "Unique ID is required!" });
+        return;
+      }
       const player = await Texture.findOne({ uniqueId: req.params.uniqueId });
       if (!player) {
         res.status(404).json({ message: "Player not found!" });
