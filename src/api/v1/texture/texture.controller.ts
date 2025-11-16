@@ -13,7 +13,7 @@ const savePlayer = asyncHandler(
         return;
       }
 
-      Texture.replaceOne({ uniqueId: req.body.uniqueId }, req.body, {
+      await Texture.replaceOne({ uniqueId: req.body.uniqueId }, req.body, {
         upsert: true,
       }).exec();
 
